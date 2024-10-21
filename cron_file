@@ -1,0 +1,3 @@
+ Edit the crontab using 'crontab -e'
+# This script will run every day at midnight
+0 0 * * * /path/to/your/script.sh
