@@ -1,3 +1,6 @@
+
+######### logging script output ##########
+
 #!/bin/bash
 
 log_file="/var/log/my_script.log"
@@ -6,3 +9,11 @@ exec > "$log_file" 2>&1
 echo "Script started at $(date)"
 # Your script logic here
 echo "Script finished at $(date)"
+
+###########     error handling      ############
+
+#!/bin/bash
+
+set -e
+# Your script logic here
+# If an error occurs, the script will exit here
