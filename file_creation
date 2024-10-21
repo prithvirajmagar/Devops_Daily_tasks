@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" = "" ]; then
+  echo "Usage: $0 <number of files to create>"
+  exit 1
+fi
+
+now=`date '+%Y-%m-%d_%H%M%S'`
+prefix="${now}_myFilePrefix"
+echo "creating $1 files"
+echo "now=$now"
+
+for i in $(seq 1 $1); do file="${prefix}_${i}.log"; echo "creating $file"; touch $file; done
