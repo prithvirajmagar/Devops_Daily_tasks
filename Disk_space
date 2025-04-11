@@ -9,4 +9,3 @@ if [ "$disk_usage" -ge "$threshold" ]; then
 else
     echo "Disk space is within acceptable limits. Disk Usage: $disk_usage%"
 fi
----
